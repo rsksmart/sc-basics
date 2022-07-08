@@ -1,13 +1,31 @@
-# Sample Hardhat Project
+# Smart contracts basics
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+Some basic examples to learn Solidity
 
-Try running some of the following tasks:
+Install:
 
-```shell
-npx hardhat help
+```sh
+npm i
+```
+
+## Transfer script
+
+A simple script that shows how to transfer RBTC from an account to another account.
+
+```sh
+npx hardhat run scripts/transfer.ts
+```
+
+## Basic structure
+
+Understand the basic structure of a smart contract. See `contracts/BasicStructure.sol`
+
+```sh
+npx hardhat run scripts/basicStructure.ts
+```
+
+Try testing with
+
+```sh
 npx hardhat test
-GAS_REPORT=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.ts
 ```
