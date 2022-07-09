@@ -36,7 +36,7 @@ Try testing with
 npx hardhat test
 ```
 
-> Read more at https://docs.soliditylang.org/en/latest/structure-of-a-contract.html, https://docs.soliditylang.org/en/latest/contracts.html#function-modifiers and https://docs.soliditylang.org/en/latest/contracts.html#special-functions
+> Read more at https://docs.soliditylang.org/en/latest/structure-of-a-contract.html, https://docs.soliditylang.org/en/latest/contracts.html#state-mutability and https://docs.soliditylang.org/en/latest/contracts.html#special-functions
 
 ## Data Types
 

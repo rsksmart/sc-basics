@@ -6,11 +6,6 @@ import "hardhat/console.sol";
 contract BasicStructure {
   uint globals = 10;
 
-  modifier guards(uint x) {
-    require(x == 200, "Error message!");
-    _;
-  }
-
   constructor(/** ...params... */) {
     console.log(1000);
     // init code
@@ -28,6 +23,11 @@ contract BasicStructure {
   receive() external payable {
     console.log(msg.value);
     // fallback, after reciving
+  }
+
+  modifier guards(uint x) {
+    require(x == 200, "Error message!");
+    _;
   }
 
   function twoHundred() public pure returns(uint) {
