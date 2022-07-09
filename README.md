@@ -61,3 +61,13 @@ npx hardhat run scripts/reverts.ts
 ```
 
 > Read more at https://docs.soliditylang.org/en/latest/contracts.html#errors-and-the-revert-statement and https://docs.soliditylang.org/en/latest/contracts.html#function-modifiers
+
+## Libraries and imports
+
+See how to use libraries and how to import third-party contracts
+
+```
+npx hardhat run scripts/libraries.ts
+```
+
+> Read more at https://docs.soliditylang.org/en/latest/contracts.html#libraries and https://docs.soliditylang.org/en/latest/path-resolution.html?highlight=import#imports

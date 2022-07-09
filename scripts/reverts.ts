@@ -1,5 +1,5 @@
 import { ethers } from 'hardhat'
-import { BigNumber, ContractTransaction } from 'ethers'
+import { ContractTransaction } from 'ethers'
 
 async function main() {
   const RevertsFactory = await ethers.getContractFactory('Reverts')
