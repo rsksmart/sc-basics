@@ -15,6 +15,13 @@ async function main() {
   const deployReceipt = await basicStructure.deployTransaction.wait()
   console.log('deployReceipt', deployReceipt)
 
+
+  console.log("Pure function")
+  console.log("============")
+
+  console.log(await basicStructure.twoHundred())
+
+
   console.log("Read storage")
   console.log("============")
 

@@ -3,6 +3,15 @@ import { BigNumber } from 'ethers'
 import { expect } from 'chai'
 
 describe('BasicStructure', function () {
+  it('pure returns 100+100', async function () {
+    const BasicStructureFactory = await ethers.getContractFactory('BasicStructure')
+
+    const basicStructure = await BasicStructureFactory.deploy()
+    await basicStructure.deployTransaction.wait()
+
+    expect(await basicStructure.twoHundred()).eq(BigNumber.from(200))
+  })
+
   it('has initial value', async function () {
     const BasicStructureFactory = await ethers.getContractFactory('BasicStructure')
 

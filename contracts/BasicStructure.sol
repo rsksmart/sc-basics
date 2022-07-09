@@ -30,6 +30,10 @@ contract BasicStructure {
     // fallback, after reciving
   }
 
+  function twoHundred() public pure returns(uint) {
+    return 100 + 100;
+  }
+
   function readStorage() public view returns (uint) {
     // do things...
     return globals;

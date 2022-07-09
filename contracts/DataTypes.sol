@@ -5,8 +5,15 @@ import "./BasicStructure.sol";
 
 // https://docs.soliditylang.org/en/v0.8.14/types.html
 contract DataTypes {
-  string text = "La Rioja 2022!!";
-  bool flag = true;
+  uint n = 1000;
+  int x = -200;
+
+  string constant text = "La Rioja 2022!!";
+  bool immutable flag;
+
+  constructor() {
+    flag = true;
+  }
 
   receive() external payable {}
 
@@ -18,8 +25,6 @@ contract DataTypes {
     return ":(";
   }
 
-  uint n = 1000;
-  int x = -200;
 
   function sumUint() public view returns (uint) {
     return n + 300;
