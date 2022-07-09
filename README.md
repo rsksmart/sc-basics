@@ -30,7 +30,7 @@ Try testing with
 npx hardhat test
 ```
 
-> Read more at https://docs.soliditylang.org/en/latest/structure-of-a-contract.html and https://docs.soliditylang.org/en/latest/contracts.html#function-modifiers
+> Read more at https://docs.soliditylang.org/en/latest/structure-of-a-contract.html, https://docs.soliditylang.org/en/latest/contracts.html#function-modifiers and https://docs.soliditylang.org/en/latest/contracts.html#special-functions
 
 ## Data Types
 
@@ -51,3 +51,13 @@ npx hardhat run scripts/visibility.ts
 ```
 
 > Read more at https://docs.soliditylang.org/en/latest/contracts.html#functions and https://docs.soliditylang.org/en/latest/contracts.html#inheritance
+
+## Require, revert and modifiers
+
+How to validate and revert transactions. See `contracts/Reverts.sol`
+
+```
+npx hardhat run scripts/reverts.ts
+```
+
+> Read more at https://docs.soliditylang.org/en/latest/contracts.html#errors-and-the-revert-statement and https://docs.soliditylang.org/en/latest/contracts.html#function-modifiers
