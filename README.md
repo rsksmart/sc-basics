@@ -29,3 +29,11 @@ Try testing with
 ```sh
 npx hardhat test
 ```
+
+## Data Types
+
+Data types available in smart contracts
+
+```
+npx hardhat run scripts/dataTypes.ts
+```
