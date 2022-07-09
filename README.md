@@ -1,12 +1,18 @@
-# Smart contracts basics
+<p align="middle">
+    <img src="https://iovlabs.org/img/logos/logo.png" alt="logo" height="100" >
+</p>
+<h3 align="middle">Smart contracts basics</h3>
+<p align="middle">
+    Some basic examples to learn Solidity + scripts to see results
+</p>
 
-Some basic examples to learn Solidity
-
-Install:
+First install dependencies:
 
 ```sh
 npm i
 ```
+
+Start learning! Try running the scripts to see how the contracts work.
 
 ## Transfer script
 
