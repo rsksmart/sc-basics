@@ -77,3 +77,13 @@ npx hardhat run scripts/libraries.ts
 ```
 
 > Read more at https://docs.soliditylang.org/en/latest/contracts.html#libraries and https://docs.soliditylang.org/en/latest/path-resolution.html?highlight=import#imports
+
+## Events
+
+Emit events that can be read on the transaction receipt
+
+```
+npx hardhat run scripts/events.ts
+```
+
+> Read more at https://docs.soliditylang.org/en/latest/contracts.html#events
