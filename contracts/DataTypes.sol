@@ -5,31 +5,17 @@ import "./BasicStructure.sol";
 
 // https://docs.soliditylang.org/en/v0.8.14/types.html
 contract DataTypes {
-  uint n = 1000;
-  int x = -200;
-
-  string constant text = "La Rioja 2022!!";
-  bool immutable flag;
-
-  constructor() {
-    flag = true;
-  }
-
   receive() external payable {}
 
-  function useBool() public view returns (string memory) {
-    if (flag) {
-      return text;
-    }
-
-    return ":(";
-  }
-
+  // basic types
+  uint n = 1000;
+  int x = -200;
 
   function sumUint() public view returns (uint) {
     return n + 300;
   }
 
+  // casting
   function castWithInt() public view returns (int) {
     return int(n) + x;
   }
@@ -41,20 +27,36 @@ contract DataTypes {
     return alice.balance;
   }
 
+  // allow transfers
   function transferToBob() public {
     bob.transfer(1000);
   }
 
-  function getMessageOfGetterSetter(BasicStructure getterSetter) public view returns (uint) {
-    return getterSetter.readStorage();
+  // mutability
+  string constant text = "La Rioja 2022!!";
+  bool immutable flag;
+
+  constructor() {
+    flag = true;
   }
 
+  // control structures
+  function useBool() public view returns (string memory) {
+    if (flag) {
+      return text;
+    }
+
+    return ":(";
+  }
+
+  // arrays
   bytes4[] arr = [ bytes4(0x01234567), bytes4(0x89abcdef) ];
 
   function getElement(uint i) public view returns (bytes4) {
     return arr[i];
   }
 
+  // maps
   mapping(address => uint) apples;
 
   function saveApples(address a, uint amount) public {
@@ -65,6 +67,10 @@ contract DataTypes {
     return apples[a];
   }
 
+  // composing
+  mapping(address => mapping(address => uint[])) superStructure;
+
+  // enums
   enum State { State1, State2, State3 }
 
   State currentState = State.State1;
@@ -79,6 +85,7 @@ contract DataTypes {
     return currentState;
   }
 
+  // structs
   struct Person {
     string name;
     uint age;
@@ -90,5 +97,9 @@ contract DataTypes {
     p.age = 27;
 
     return p.age;
+  }
+
+  function getMessageOfGetterSetter(BasicStructure getterSetter) public view returns (uint) {
+    return getterSetter.readStorage();
   }
 }

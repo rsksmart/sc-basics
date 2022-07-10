@@ -46,7 +46,7 @@ Data types available in smart contracts. See `contracts/DataTypes.sol`
 npx hardhat run scripts/dataTypes.ts
 ```
 
-> Read more at https://docs.soliditylang.org/en/latest/types.html
+> Read more at https://docs.soliditylang.org/en/latest/types.html and https://docs.soliditylang.org/en/latest/contracts.html#constant-and-immutable-state-variables
 
 ## Inheritance, state mutability and visibility
 
