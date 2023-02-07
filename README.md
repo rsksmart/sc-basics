@@ -87,3 +87,13 @@ npx hardhat run scripts/events.ts
 ```
 
 > Read more at https://docs.soliditylang.org/en/latest/contracts.html#events
+
+## Safe
+
+This is a simple (integrative) example of how a smart contract can be used for a family safe. The contract allows to any family member to withdraw any amount at any time. It will emit an event on each deposit and withdraw.
+
+See the tests to check it out
+
+```
+npx hardhat test test/safe.test.ts
+```
